@@ -2,6 +2,7 @@ package alco.shop.rest;
 
 import alco.shop.model.Drink;
 import alco.shop.repository.DrinkRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
+@Slf4j
 @Controller
 public class DrinkController {
 
@@ -23,8 +25,10 @@ public class DrinkController {
     public ResponseEntity<List<Drink>> getDrinks() {
         List<Drink> drinks = drinkRepository.findAll();
         if (drinks.isEmpty()) {
+            log.info(drinks.toString());
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
+        log.info(drinks.toString());
         return new ResponseEntity<>(drinks,HttpStatus.OK);
     }
 

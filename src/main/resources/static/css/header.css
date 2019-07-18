@@ -1,0 +1,39 @@
+.nav,
+#dropdown {
+    background-color: #E2E0E0;
+    border-radius: 0 0 3px 3px;
+}
+
+.nav-list-item {
+    color: black;
+}
+
+.nav-list-item:hover {
+    color: black;
+}
+
+.show-dropdown {
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
+    border: 0;
+    outline: none !important;
+}
+
+/*submenu*/
+
+#dropdown {
+    display: none;
+    background-color: #E2E0E0;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+#dropdown li {
+    list-style-type: none;
+}
+
+#dropdown li a {
+    color: black;
+    text-transform: lowercase;
+}

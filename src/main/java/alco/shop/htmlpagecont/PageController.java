@@ -10,7 +10,12 @@ public class PageController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String hello(Model model) {
-        return "index";
+        return "main";
+    }
+
+    @RequestMapping(value = "/products", method = RequestMethod.GET)
+    public String products(Model model) {
+        return "products";
     }
 
 }

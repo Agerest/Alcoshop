@@ -1,0 +1,31 @@
+/*filters*/
+
+nav {
+    margin-top: 20px;
+}
+
+.btn-search {
+    background-color: #E2E0E0;
+}
+
+/*products*/
+
+.product {
+    border-radius: 3px;
+    text-align: center;
+    background-color: #E2E0E0;
+}
+
+.product-name {
+    color: black;
+    text-decoration: none;
+}
+
+.product-name:hover {
+    color: black;
+}
+
+.product-img {
+    text-align: center;
+    height: 200px;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/header.js"></script>
+</head>
+<body>
+<header class="container">
+    <div class="nav row justify-content-between">
+        <h3 class="shop-name col align-self-center" align="left">Алкошоп</h3>
+        <ul class="nav-list col">
+            <li class="d-inline-block"><a class="nav-list-item" href="">О нас</a></li>
+            <li class="d-inline-block m-2">|</li>
+            <li class="d-inline-block">
+                <button class="show-dropdown nav-list-item" onclick="showDropdown()">Продукция</button>
+            </li>
+            <li class="d-inline-block m-2">|</li>
+            <li class="d-inline-block"><a class="nav-list-item" href="">Дисконт</a></li>
+            <li class="d-inline-block m-2">|</li>
+            <li class="d-inline-block"><a class="nav-list-item" href="">Контакты</a></li>
+        </ul>
+        <h3 class="menu-item col align-self-center" align="right">8-800-555-35-35</h3>
+    </div>
+
+    <ul class="row p-2" id="dropdown">
+        <li class="col-3"><a href="">Коньяк (100)</a></li>
+        <li class="col-3"><a href="">Вино (100)</a></li>
+        <li class="col-3"><a href="">Пиво (100)</a></li>
+        <li class="col-3"><a href="">Виски (100)</a></li>
+        <li class="col-3"><a href="">Вино игристое (100)</a></li>
+        <li class="col-3"><a href="">Водка (100)</a></li>
+        <li class="col-3"><a href="">Ликеры (100)</a></li>
+        <li class="col-3"><a href="">Текила (100)</a></li>
+        <li class="col-3"><a href="">Кашаса (100)</a></li>
+        <li class="col-3"><a href="">Граппа (100)</a></li>
+        <li class="col-3"><a href="">Хересы (100)</a></li>
+        <li class="col-3"><a href="">Настойка (100)</a></li>
+        <li class="col-3"><a href="">Ром (100)</a></li>
+        <li class="col-3"><a href="">Портвейн</a></li>
+        <li class="col-3"><a href="">Джины (100)</a></li>
+        <li class="col-3"><a href="">Мадера (100)</a></li>
+        <li class="col-3"><a href="">Арманьяк (100)</a></li>
+        <li class="col-3"><a href="">Вермут (100)</a></li>
+        <li class="col-3"><a href="">Кальвадосы (100)</a></li>
+        <li class="col-3"><a href="">Вино плодовое (100)</a></li>
+        <li class="col-3"><a href="">Абсент (100)</a></li>
+        <li class="col-3"><a href="">Шнапс (100)</a></li>
+        <li class="col-3"><a href="">Бренди (виноградные) (100)</a></li>
+        <li class="col-3"><a href="">Бренди и листеляты фруктовые (100)</a></li>
+    </ul>
+</header>
+
+<nav class="container p-4">
+    <div class="row justify-content-center">
+        <div class="col-2">
+            <input class="filter form-control w-100" placeholder="Мин цена">
+        </div>
+        <div class="col-2">
+            <input class="filter form-control w-100" placeholder="Макс цена">
+        </div>
+        <div class="col-2">
+            <select class="filter form-control">
+                <option>Регион</option>
+                <option>Москва</option>
+                <option>Санкт Петербург</option>
+                <option>Самара</option>
+            </select>
+        </div>
+        <div class="col-2">
+            <select class="filter form-control">
+                <option label="default">Сортировать</option>
+                <option label="ascending">По возрастанию</option>
+                <option label="descending">По убыванию</option>
+            </select>
+        </div>
+        <div class="col-2">
+            <input type="submit" class="btn btn-search w-100" value="Найти">
+        </div>
+    </div>
+</nav>
+
+<main class="container">
+    <!--<section class="products row justify-content-between">
+        <article class="product col m-3">
+            <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
+            <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
+            <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+            <p>Очень полезное пиво, рекомендую пить всем</p>
+            <p>Крепость: 4.7%</p>
+        </article>
+        <article class="product col m-3">
+            <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
+            <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
+            <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+            <p>Очень полезное пиво, рекомендую пить всем</p>
+            <p>Крепость: 4.7%</p>
+        </article>
+        <article class="product col m-3">
+            <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
+            <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
+            <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+            <p>Очень полезное пиво, рекомендую пить всем</p>
+            <p>Крепость: 4.7%</p>
+        </article>
+        <article class="product col m-3">
+            <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
+            <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
+            <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+            <p>Очень полезное пиво, рекомендую пить всем</p>
+            <p>Крепость: 4.7%</p>
+        </article>
+    </section>
+
+    <section class="products row justify-content-between">
+        <article class="product col m-3">
+            <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
+            <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
+            <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+            <p>Очень полезное пиво, рекомендую пить всем</p>
+            <p>Крепость: 4.7%</p>
+        </article>
+        <article class="product col m-3">
+            <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
+            <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
+            <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+            <p>Очень полезное пиво, рекомендую пить всем</p>
+            <p>Крепость: 4.7%</p>
+        </article>
+        <article class="product col m-3">
+            <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
+            <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
+            <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+            <p>Очень полезное пиво, рекомендую пить всем</p>
+            <p>Крепость: 4.7%</p>
+        </article>
+        <article class="product col m-3">
+            <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
+            <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
+            <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+            <p>Очень полезное пиво, рекомендую пить всем</p>
+            <p>Крепость: 4.7%</p>
+        </article>
+    </section>
+
+    <section class="products row justify-content-between">
+        <article class="product col m-3">
+            <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
+            <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
+            <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+            <p>Очень полезное пиво, рекомендую пить всем</p>
+            <p>Крепость: 4.7%</p>
+        </article>
+        <article class="product col m-3">
+            <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
+            <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
+            <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+            <p>Очень полезное пиво, рекомендую пить всем</p>
+            <p>Крепость: 4.7%</p>
+        </article>
+        <article class="product col m-3">
+            <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
+            <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
+            <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+            <p>Очень полезное пиво, рекомендую пить всем</p>
+            <p>Крепость: 4.7%</p>
+        </article>
+        <article class="product col m-3">
+            <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
+            <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
+            <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+            <p>Очень полезное пиво, рекомендую пить всем</p>
+            <p>Крепость: 4.7%</p>
+        </article>
+    </section>-->
+</main>
+
+<footer class="container">
+    <div class="row justify-content-center">
+        <div class="col">
+            <p align="center">Чрезмерное употребление алкоголя вредит вашему здоровью <br>
+                Все права защищены (c) Нарушения караются</p>
+        </div>
+    </div>
+</footer>
+<script src="js/products.js"></script>
+</body>
+</html>

@@ -6,8 +6,7 @@ function getDrinks() {
 }
 
 function createDrink(drink) {
-    console.log(drink.name);
-    return (<article className="product col m-3" id="{drink.id}">
+    return (<article className="product col-3 m-3" id="{drink.id}">
         <a href="" className="product-name"><h3>{drink.name}</h3></a>
         <a href=""><img className="product-img" src="../img/alco/beer.png" alt="alco-img" /></a>
         <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>

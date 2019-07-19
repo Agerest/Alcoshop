@@ -19,7 +19,7 @@ let drinks = getDrinks();
 console.log(drinks[0].name);
 let htmlDrinks;
 
-drinks.array.forEach(element => {
+drinks.forEach(element => {
     htmlDrinks += createDrink(element) + " ";
 });
 

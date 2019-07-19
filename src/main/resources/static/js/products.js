@@ -6,6 +6,7 @@ function getDrinks() {
 }
 
 function createDrink(drink) {
+    console.log(drink.name);
     return (<article className="product col m-3" id="{drink.id}">
         <a href="" className="product-name"><h3>{drink.name}</h3></a>
         <a href=""><img className="product-img" src="../img/alco/beer.png" alt="alco-img" /></a>
@@ -18,9 +19,8 @@ function createDrink(drink) {
 let drinks = getDrinks();
 let htmlDrinks;
 
-drinks.forEach(element => {
-    console.log(element);
-    htmlDrinks += createDrink(element) + " ";
-});
+for (let i = 0; i < drinks.length; i++){
+    htmlDrinks += createDrink(drinks[i]) + " ";
+}
 
 ReactDOM.render(htmlDrinks, document.getElementById("root-main"));

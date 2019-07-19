@@ -1,4 +1,4 @@
-ЯgetJson();
+getJson();
 
 function getJson() {
     let xhr = new XMLHttpRequest();

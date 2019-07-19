@@ -5,10 +5,7 @@ function getJson() {
     xhr.open("GET", "/getdrinks", false);
     // xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send();
-    console.log("Test 3");
-    if (xhr.status == 200) {
-        console.log("JSON " + xhr.responseText);
-    } else {
-        console.log("ERROR " + xhr.status + " " + xhr.statusText);
-    }
+    console.log("Test 4");
+    let drinks = JSON.parse(xhr.responseText)
+    console.log(drinks[0]);
 }

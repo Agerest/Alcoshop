@@ -5,8 +5,8 @@ function getJson() {
     xhr.open("POST", "/getdrinks", true);
     xhr.send();
     if (xhr.status == 200) {
-        console.log("JSON" + xhr.responseText);
+        console.log("JSON " + xhr.responseText);
     } else {
-        console.log("ERROR" + xhr.status + " " + xhr.statusText);
+        console.log("ERROR " + xhr.status + " " + xhr.statusText);
     }
 }

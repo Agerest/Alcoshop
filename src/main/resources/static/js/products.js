@@ -2,11 +2,10 @@ getJson();
 
 function getJson() {
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", "/getdrinks", true);
+    xhr.open("GET", "/getdrinks", false);
+    // xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send();
-    if (xhr.status == 200) {
-        console.log(xhr.responseText);
-    } else {
-        console.log(xhr.status + " " + xhr.statusText);
-    }
+    console.log("Test 4");
+    let drinks = JSON.parse(xhr.responseText)
+    console.log(drinks[0].name);
 }

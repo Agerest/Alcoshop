@@ -21,7 +21,17 @@ public class DrinkController {
     @Autowired
     private DrinkRepository drinkRepository;
 
-    @RequestMapping(value = "/getdrinks", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    // @RequestMapping(value="/getdrinks", method= RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE){
+    //     public ResponseEntity<List<Drink>> getDrinks(){
+    //         List<Drink> drinks = drinkRepository.findAll();
+    //         if (drinks.isEmpty()){
+    //             return new ResponseEntity<List<Drink>>(HttpStatus.NOT_FOUND);
+    //         }
+    //         return new ResponseEntity<List<Drink>>(drinks, HttpStatus.OK);
+    //     }
+    // }
+
+    @RequestMapping(value = "/getdrinks", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<List<Drink>> getDrinks() {
         List<Drink> drinks = drinkRepository.findAll();
         log.info(String.valueOf(drinks.size()));

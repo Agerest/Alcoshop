@@ -1,222 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Alcoshop</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/body.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/footer.css">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- debugging -->
+    <link rel="stylesheet" href="../static/css/body.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <!-- /debugging -->
+
+    <!-- prod -->
+    <link rel="stylesheet" href="/css/body.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <!-- /prod -->
+    <!-- Test -->
 </head>
+
 <body>
-<header class="container">
-    <div class="nav row justify-content-between">
-        <h3 class="shop-name col align-self-center" align="left">Алкошоп</h3>
-        <ul class="nav-list col">
-            <li class="d-inline-block"><a class="nav-list-item" href="">О нас</a></li>
-            <li class="d-inline-block m-2">|</li>
-            <li class="d-inline-block">
-                <button class="show-dropdown nav-list-item" onclick="showDropdown()">Продукция</button>
-            </li>
-            <li class="d-inline-block m-2">|</li>
-            <li class="d-inline-block"><a class="nav-list-item" href="">Дисконт</a></li>
-            <li class="d-inline-block m-2">|</li>
-            <li class="d-inline-block"><a class="nav-list-item" href="">Контакты</a></li>
+    <header class="container">
+        <div class="nav row justify-content-between">
+            <button class="shop-name col align-self-center">
+                <a href="https://alcoshop-new.herokuapp.com/">
+                    <h3>Алкошоп</h3>
+                </a>
+            </button>
+            <ul class="nav-list col">
+                <li class="d-inline-block"><a class="nav-list-item" href="">О нас</a></li>
+                <li class="d-inline-block m-2">|</li>
+                <li class="d-inline-block">
+                    <button class="show-dropdown nav-list-item" onclick="showDropdown()">Продукция</button>
+                </li>
+                <li class="d-inline-block m-2">|</li>
+                <li class="d-inline-block"><a class="nav-list-item" href="">Дисконт</a></li>
+                <li class="d-inline-block m-2">|</li>
+                <li class="d-inline-block"><a class="nav-list-item" href="">Контакты</a></li>
+            </ul>
+            <h3 class="menu-item col align-self-center" align="right">8-800-555-35-35</h3>
+        </div>
+
+        <ul class="row p-2" id="dropdown">
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Коньяк (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Вино (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Пиво (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Виски (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Вино игристое (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Водка (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Ликеры (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Текила (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Кашаса (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Граппа (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Хересы (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Настойка (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Ром (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Портвейн</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Джины (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Мадера (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Арманьяк (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Вермут (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Кальвадосы (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Вино плодовое (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Абсент (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Шнапс (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Бренди (виноградные) (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Бренди и листеляты фруктовые (100)</a></li>
         </ul>
-        <h3 class="menu-item col align-self-center" align="right">8-800-555-35-35</h3>
-    </div>
+    </header>
 
-    <ul class="row p-2" id="dropdown">
-        <li class="col-3"><a href="">Коньяк (100)</a></li>
-        <li class="col-3"><a href="">Вино (100)</a></li>
-        <li class="col-3"><a href="">Пиво (100)</a></li>
-        <li class="col-3"><a href="">Виски (100)</a></li>
-        <li class="col-3"><a href="">Вино игристое (100)</a></li>
-        <li class="col-3"><a href="">Водка (100)</a></li>
-        <li class="col-3"><a href="">Ликеры (100)</a></li>
-        <li class="col-3"><a href="">Текила (100)</a></li>
-        <li class="col-3"><a href="">Кашаса (100)</a></li>
-        <li class="col-3"><a href="">Граппа (100)</a></li>
-        <li class="col-3"><a href="">Хересы (100)</a></li>
-        <li class="col-3"><a href="">Настойка (100)</a></li>
-        <li class="col-3"><a href="">Ром (100)</a></li>
-        <li class="col-3"><a href="">Портвейн</a></li>
-        <li class="col-3"><a href="">Джины (100)</a></li>
-        <li class="col-3"><a href="">Мадера (100)</a></li>
-        <li class="col-3"><a href="">Арманьяк (100)</a></li>
-        <li class="col-3"><a href="">Вермут (100)</a></li>
-        <li class="col-3"><a href="">Кальвадосы (100)</a></li>
-        <li class="col-3"><a href="">Вино плодовое (100)</a></li>
-        <li class="col-3"><a href="">Абсент (100)</a></li>
-        <li class="col-3"><a href="">Шнапс (100)</a></li>
-        <li class="col-3"><a href="">Бренди (виноградные) (100)</a></li>
-        <li class="col-3"><a href="">Бренди и листеляты фруктовые (100)</a></li>
-    </ul>
-</header>
+    <main class="container p-4">
+        <section class="row order-beer order-beer-title p-2">
+            <article class="col">
+                <h1>Заказать пиво онлайн</h1>
+            </article>
+        </section>
 
-<main class="container p-4">
-    <section class="row order-beer order-beer-title p-2">
-        <article class="col">
-            <h1>Заказать пиво онлайн</h1>
-        </article>
-    </section>
+        <section class="row order-beer p-2">
+            <article class="col">
+                <select class="form-control">
+                    <option>Выберите город</option>
+                    <option>Москва</option>
+                    <option>Санкт-Петербург</option>
+                    <option>Самара</option>
+                </select>
+            </article>
+            <article class="col">
+                <select class="form-control">
+                    <option>Выберите магазин</option>
+                </select>
+            </article>
+            <article class="col">
+                <select class="form-control">
+                    <option>Выберите объем</option>
+                    <option>0.5 л</option>
+                    <option>1.0 л</option>
+                    <option>1.5 л</option>
+                    <option>2.0 л</option>
+                </select>
+            </article>
+            <article class="col">
+                <input type="time" class="form-control">
+            </article>
+            <article class="col">
+                <button class="btn btn-secondary w-100">Заказать</button>
+            </article>
+        </section>
 
-    <section class="row order-beer p-2">
-        <article class="col">
-            <select class="form-control">
-                <option>Выберите город</option>
-                <option>Москва</option>
-                <option>Санкт-Петербург</option>
-                <option>Самара</option>
-            </select>
-        </article>
-        <article class="col">
-            <select class="form-control">
-                <option>Выберите магазин</option>
-            </select>
-        </article>
-        <article class="col">
-            <select class="form-control">
-                <option>Выберите объем</option>
-                <option>0.5 л</option>
-                <option>1.0 л</option>
-                <option>1.5 л</option>
-                <option>2.0 л</option>
-            </select>
-        </article>
-        <article class="col">
-            <input type="time" class="form-control">
-        </article>
-        <article class="col">
-            <button class="btn btn-secondary w-100">Заказать</button>
-        </article>
-    </section>
+        <section class="row order-beer beers p-2">
+            <div class="col products-scroll">
+                <ul class="row-scroll d-flex justify-content-between">
+                    <li class="product m-2 p-2" id="1">
+                        <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
+                        <h3 class="product-name">Лучшее пиво</h3>
+                        <p class="product-desc">Крепость: 4.7%</p>
+                    </li>
+                    <li class="product m-2 p-2" id="2">
+                        <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
+                        <h3 class="product-name">Лучшее пиво</h3>
+                        <p class="product-desc">Крепость: 4.7%</p>
+                    </li>
+                    <li class="product m-2 p-2" id="3">
+                        <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
+                        <h3 class="product-name">Лучшее пиво</h3>
+                        <p class="product-desc">Крепость: 4.7%</p>
+                    </li>
+                    <li class="product m-2 p-2" id="4">
+                        <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
+                        <h3 class="product-name">Лучшее пиво</h3>
+                        <p class="product-desc">Крепость: 4.7%</p>
+                    </li>
+                </ul>
+                <ul class="row-scroll d-flex justify-content-between">
+                    <li class="product m-2 p-2" id="5">
+                        <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
+                        <h3 class="product-name">Лучшее пиво</h3>
+                        <p class="product-desc">Крепость: 4.7%</p>
+                    </li>
+                    <li class="product m-2 p-2" id="6">
+                        <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
+                        <h3 class="product-name">Лучшее пиво</h3>
+                        <p class="product-desc">Крепость: 4.7%</p>
+                    </li>
+                    <li class="product m-2 p-2" id="7">
+                        <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
+                        <h3 class="product-name">Лучшее пиво</h3>
+                        <p class="product-desc">Крепость: 4.7%</p>
+                    </li>
+                    <li class="product m-2 p-2" id="8">
+                        <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
+                        <h3 class="product-name">Лучшее пиво</h3>
+                        <p class="product-desc">Крепость: 4.7%</p>
+                    </li>
+                </ul>
+                <ul class="row-scroll d-flex justify-content-between">
+                    <li class="product m-2 p-2" id="9">
+                        <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
+                        <h3 class="product-name">Лучшее пиво</h3>
+                        <p class="product-desc">Крепость: 4.7%</p>
+                    </li>
+                    <li class="product m-2 p-2" id="10">
+                        <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
+                        <h3 class="product-name">Лучшее пиво</h3>
+                        <p class="product-desc">Крепость: 4.7%</p>
+                    </li>
+                    <li class="product m-2 p-2" id="11">
+                        <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
+                        <h3 class="product-name">Лучшее пиво</h3>
+                        <p class="product-desc">Крепость: 4.7%</p>
+                    </li>
+                    <li class="product m-2 p-2" id="12">
+                        <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
+                        <h3 class="product-name">Лучшее пиво</h3>
+                        <p class="product-desc">Крепость: 4.7%</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="row order-beer beers p-2">
-        <div class="col products-scroll">
-            <ul class="row-scroll d-flex justify-content-between">
-                <li class="product m-2 p-2" id="1">
-                    <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
-                    <h3 class="product-name">Лучшее пиво</h3>
-                    <p class="product-desc">Крепость: 4.7%</p>
-                </li>
-                <li class="product m-2 p-2" id="2">
-                    <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
-                    <h3 class="product-name">Лучшее пиво</h3>
-                    <p class="product-desc">Крепость: 4.7%</p>
-                </li>
-                <li class="product m-2 p-2" id="3">
-                    <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
-                    <h3 class="product-name">Лучшее пиво</h3>
-                    <p class="product-desc">Крепость: 4.7%</p>
-                </li>
-                <li class="product m-2 p-2" id="4">
-                    <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
-                    <h3 class="product-name">Лучшее пиво</h3>
-                    <p class="product-desc">Крепость: 4.7%</p>
-                </li>
-            </ul>
-            <ul class="row-scroll d-flex justify-content-between">
-                <li class="product m-2 p-2" id="5">
-                    <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
-                    <h3 class="product-name">Лучшее пиво</h3>
-                    <p class="product-desc">Крепость: 4.7%</p>
-                </li>
-                <li class="product m-2 p-2" id="6">
-                    <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
-                    <h3 class="product-name">Лучшее пиво</h3>
-                    <p class="product-desc">Крепость: 4.7%</p>
-                </li>
-                <li class="product m-2 p-2" id="7">
-                    <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
-                    <h3 class="product-name">Лучшее пиво</h3>
-                    <p class="product-desc">Крепость: 4.7%</p>
-                </li>
-                <li class="product m-2 p-2" id="8">
-                    <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
-                    <h3 class="product-name">Лучшее пиво</h3>
-                    <p class="product-desc">Крепость: 4.7%</p>
-                </li>
-            </ul>
-            <ul class="row-scroll d-flex justify-content-between">
-                <li class="product m-2 p-2" id="9">
-                    <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
-                    <h3 class="product-name">Лучшее пиво</h3>
-                    <p class="product-desc">Крепость: 4.7%</p>
-                </li>
-                <li class="product m-2 p-2" id="10">
-                    <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
-                    <h3 class="product-name">Лучшее пиво</h3>
-                    <p class="product-desc">Крепость: 4.7%</p>
-                </li>
-                <li class="product m-2 p-2" id="11">
-                    <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
-                    <h3 class="product-name">Лучшее пиво</h3>
-                    <p class="product-desc">Крепость: 4.7%</p>
-                </li>
-                <li class="product m-2 p-2" id="12">
-                    <img class="product-img" src="../img/alco/beer.png" alt="alco-img">
-                    <h3 class="product-name">Лучшее пиво</h3>
-                    <p class="product-desc">Крепость: 4.7%</p>
-                </li>
-            </ul>
+        <section class="row interesting interesting-title">
+            <div class="col">
+                <h2>Пиво</h2>
+            </div>
+        </section>
+
+        <section class="row interesting">
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+        </section>
+
+        <section class="row interesting">
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+        </section>
+
+        <section class="row interesting interesting-title">
+            <div class="col">
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div class="row justify-content-center">
+            <div class="col">
+                <p align="center">Чрезмерное употребление алкоголя вредит вашему здоровью <br>
+                    Все права защищены (c) Нарушения караются</p>
+            </div>
         </div>
-    </section>
+    </footer>
+    <!-- debugging -->
+    <script src="../static/js/header.js"></script>
+    <script src="../static/js/main.js"></script>
+    <!-- /debugging -->
 
-    <section class="row interesting interesting-title">
-        <div class="col">
-            <h2>Пиво</h2>
-        </div>
-    </section>
-
-    <section class="row interesting">
-        <div class="col">
-
-        </div>
-        <div class="col">
-
-        </div>
-        <div class="col">
-
-        </div>
-        <div class="col">
-
-        </div>
-    </section>
-
-    <section class="row interesting">
-        <div class="col">
-
-        </div>
-        <div class="col">
-
-        </div>
-        <div class="col">
-
-        </div>
-        <div class="col">
-
-        </div>
-    </section>
-
-    <section class="row interesting interesting-title">
-        <div class="col">
-
-        </div>
-    </section>
-</main>
-
-<footer class="container">
-    <div class="row justify-content-center">
-        <div class="col">
-            <p align="center">Чрезмерное употребление алкоголя вредит вашему здоровью <br>
-                Все права защищены (c) Нарушения караются</p>
-        </div>
-    </div>
-</footer>
-<script src="js/header.js"></script>
-<script src="js/main.js"></script>
+    <!-- prod -->
+    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
+    <!-- /prod -->
 </body>
+
 </html>

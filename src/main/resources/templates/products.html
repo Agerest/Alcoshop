@@ -23,7 +23,7 @@
 
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    
+
     <!-- Don't use this in production: -->
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 </head>
@@ -109,101 +109,165 @@
     </nav>
 
     <main class="container">
-        <div class="row justify-content-between" id="root-main">
-
+        <!-- <div class="row justify-content-between" id="root-main">
+            <article class="product col-3">
+                <a href="" class="product-name">
+                    <h3>Лучшее пиво</h3>
+                </a>
+                <a href=""><img class="product-img" src="../static/img/alco/beer.png" alt="alco-img"></a>
+                <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+                <p>Очень полезное пиво, рекомендую пить всем</p>
+                <p>Крепость: 4.7%</p>
+            </article>
+            <article class="product col-3">
+                <a href="" class="product-name">
+                    <h3>Лучшее пиво</h3>
+                </a>
+                <a href=""><img class="product-img" src="../static/img/alco/beer.png" alt="alco-img"></a>
+                <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+                <p>Очень полезное пиво, рекомендую пить всем</p>
+                <p>Крепость: 4.7%</p>
+            </article>
+            <article class="product col-3">
+                <a href="" class="product-name">
+                    <h3>Лучшее пиво</h3>
+                </a>
+                <a href=""><img class="product-img" src="../static/img/alco/beer.png" alt="alco-img"></a>
+                <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+                <p>Очень полезное пиво, рекомендую пить всем</p>
+                <p>Крепость: 4.7%</p>
+            </article>
+            <article class="product col-3">
+                <a href="" class="product-name">
+                    <h3>Лучшее пиво</h3>
+                </a>
+                <a href=""><img class="product-img" src="../static/img/alco/beer.png" alt="alco-img"></a>
+                <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+                <p>Очень полезное пиво, рекомендую пить всем</p>
+                <p>Крепость: 4.7%</p>
+            </article>
+            <article class="product col-3">
+                <a href="" class="product-name">
+                    <h3>Лучшее пиво</h3>
+                </a>
+                <a href=""><img class="product-img" src="../static/img/alco/beer.png" alt="alco-img"></a>
+                <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+                <p>Очень полезное пиво, рекомендую пить всем</p>
+                <p>Крепость: 4.7%</p>
+            </article>
+            <article class="product col-3">
+                <a href="" class="product-name">
+                    <h3>Лучшее пиво</h3>
+                </a>
+                <a href=""><img class="product-img" src="../static/img/alco/beer.png" alt="alco-img"></a>
+                <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+                <p>Очень полезное пиво, рекомендую пить всем</p>
+                <p>Крепость: 4.7%</p>
+            </article>
+            <article class="product col-3">
+                <a href="" class="product-name">
+                    <h3>Лучшее пиво</h3>
+                </a>
+                <a href=""><img class="product-img" src="../static/img/alco/beer.png" alt="alco-img"></a>
+                <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+                <p>Очень полезное пиво, рекомендую пить всем</p>
+                <p>Крепость: 4.7%</p>
+            </article>
+            <article class="product col-3">
+                <a href="" class="product-name">
+                    <h3>Лучшее пиво</h3>
+                </a>
+                <a href=""><img class="product-img" src="../static/img/alco/beer.png" alt="alco-img"></a>
+                <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+                <p>Очень полезное пиво, рекомендую пить всем</p>
+                <p>Крепость: 4.7%</p>
+            </article>
+            <article class="product col-3">
+                <a href="" class="product-name">
+                    <h3>Лучшее пиво</h3>
+                </a>
+                <a href=""><img class="product-img" src="../static/img/alco/beer.png" alt="alco-img"></a>
+                <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+                <p>Очень полезное пиво, рекомендую пить всем</p>
+                <p>Крепость: 4.7%</p>
+            </article>
+        </div> -->
+        <div class="row" id="root-main">
+            <!-- <article class="product col-3">
+                <a href="" class="product-name">
+                    <h3>Лучшее пиво</h3>
+                </a>
+                <a href=""><img class="product-img" src="../static/img/alco/beer.png" alt="alco-img"></a>
+                <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+                <p>Очень полезное пиво, рекомендую пить всем</p>
+                <p>Крепость: 4.7%</p>
+            </article>
+            <article class="product col-3">
+                <a href="" class="product-name">
+                    <h3>Лучшее пиво</h3>
+                </a>
+                <a href=""><img class="product-img" src="../static/img/alco/beer.png" alt="alco-img"></a>
+                <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+                <p>Очень полезное пиво, рекомендую пить всем</p>
+                <p>Крепость: 4.7%</p>
+            </article>
+            <article class="product col-3">
+                <a href="" class="product-name">
+                    <h3>Лучшее пиво</h3>
+                </a>
+                <a href=""><img class="product-img" src="../static/img/alco/beer.png" alt="alco-img"></a>
+                <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+                <p>Очень полезное пиво, рекомендую пить всем</p>
+                <p>Крепость: 4.7%</p>
+            </article>
+            <article class="product col-3">
+                <a href="" class="product-name">
+                    <h3>Лучшее пиво</h3>
+                </a>
+                <a href=""><img class="product-img" src="../static/img/alco/beer.png" alt="alco-img"></a>
+                <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+                <p>Очень полезное пиво, рекомендую пить всем</p>
+                <p>Крепость: 4.7%</p>
+            </article>
+            <article class="product col-3">
+                <a href="" class="product-name">
+                    <h3>Лучшее пиво</h3>
+                </a>
+                <a href=""><img class="product-img" src="../static/img/alco/beer.png" alt="alco-img"></a>
+                <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+                <p>Очень полезное пиво, рекомендую пить всем</p>
+                <p>Крепость: 4.7%</p>
+            </article>
+            <article class="product col-3">
+                <a href="" class="product-name">
+                    <h3>Лучшее пиво</h3>
+                </a>
+                <a href=""><img class="product-img" src="../static/img/alco/beer.png" alt="alco-img"></a>
+                <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+                <p>Очень полезное пиво, рекомендую пить всем</p>
+                <p>Крепость: 4.7%</p>
+            </article>
+            <article class="product col-3">
+                <a href="" class="product-name">
+                    <h3>Лучшее пиво</h3>
+                </a>
+                <a href=""><img class="product-img" src="../static/img/alco/beer.png" alt="alco-img"></a>
+                <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+                <p>Очень полезное пиво, рекомендую пить всем</p>
+                <p>Крепость: 4.7%</p>
+            </article>
+            <article class="product col-3">
+                <a href="" class="product-name">
+                    <h3>Лучшее пиво</h3>
+                </a>
+                <a href=""><img class="product-img" src="../static/img/alco/beer.png" alt="alco-img"></a>
+                <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
+                <p>Очень полезное пиво, рекомендую пить всем</p>
+                <p>Крепость: 4.7%</p>
+            </article> -->
         </div>
-        <!--<section class="products row justify-content-between">
-    <article class="product col m-3">
-        <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
-        <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
-        <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
-        <p>Очень полезное пиво, рекомендую пить всем</p>
-        <p>Крепость: 4.7%</p>
-    </article>
-    <article class="product col m-3">
-        <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
-        <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
-        <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
-        <p>Очень полезное пиво, рекомендую пить всем</p>
-        <p>Крепость: 4.7%</p>
-    </article>
-    <article class="product col m-3">
-        <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
-        <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
-        <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
-        <p>Очень полезное пиво, рекомендую пить всем</p>
-        <p>Крепость: 4.7%</p>
-    </article>
-    <article class="product col m-3">
-        <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
-        <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
-        <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
-        <p>Очень полезное пиво, рекомендую пить всем</p>
-        <p>Крепость: 4.7%</p>
-    </article>
-</section>
 
-<section class="products row justify-content-between">
-    <article class="product col m-3">
-        <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
-        <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
-        <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
-        <p>Очень полезное пиво, рекомендую пить всем</p>
-        <p>Крепость: 4.7%</p>
-    </article>
-    <article class="product col m-3">
-        <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
-        <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
-        <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
-        <p>Очень полезное пиво, рекомендую пить всем</p>
-        <p>Крепость: 4.7%</p>
-    </article>
-    <article class="product col m-3">
-        <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
-        <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
-        <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
-        <p>Очень полезное пиво, рекомендую пить всем</p>
-        <p>Крепость: 4.7%</p>
-    </article>
-    <article class="product col m-3">
-        <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
-        <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
-        <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
-        <p>Очень полезное пиво, рекомендую пить всем</p>
-        <p>Крепость: 4.7%</p>
-    </article>
-</section>
 
-<section class="products row justify-content-between">
-    <article class="product col m-3">
-        <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
-        <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
-        <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
-        <p>Очень полезное пиво, рекомендую пить всем</p>
-        <p>Крепость: 4.7%</p>
-    </article>
-    <article class="product col m-3">
-        <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
-        <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
-        <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
-        <p>Очень полезное пиво, рекомендую пить всем</p>
-        <p>Крепость: 4.7%</p>
-    </article>
-    <article class="product col m-3">
-        <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
-        <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
-        <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
-        <p>Очень полезное пиво, рекомендую пить всем</p>
-        <p>Крепость: 4.7%</p>
-    </article>
-    <article class="product col m-3">
-        <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
-        <a href=""><img class="product-img" src="../img/alco/beer.png" alt="alco-img"></a>
-        <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
-        <p>Очень полезное пиво, рекомендую пить всем</p>
-        <p>Крепость: 4.7%</p>
-    </article>
-</section>-->
     </main>
 
     <footer class="container">
@@ -224,8 +288,6 @@
     <script src="/js/header.js"></script>
     <script type="text/babel" src="/js/products.js"></script>
     <!-- /Prod -->
-
-    
 </body>
 
 </html>

@@ -1,9 +1,5 @@
 /*filters*/
 
-nav {
-    margin-top: 20px;
-}
-
 .btn-search {
     background-color: #E2E0E0;
 }
@@ -11,9 +7,9 @@ nav {
 /*products*/
 
 .product {
-    border-radius: 3px;
     text-align: center;
     background-color: #E2E0E0;
+    border: 1px solid black;
 }
 
 .product-name {

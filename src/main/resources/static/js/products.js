@@ -17,11 +17,7 @@ function createDrink(drink) {
 }
 
 let drinks = getDrinks();
-let htmlDrinks;
+let htmlDrinks = drinks.map((drink) => createDrink(drink));
 
-console.log("test 2");
-
-for (let i = 0; i < drinks.length; i++){
-    ReactDOM.render(createDrink(drinks[i]), document.getElementById("root-main"));
-}
+ReactDOM.render(htmlDrinks, document.getElementById("root-main"));
 

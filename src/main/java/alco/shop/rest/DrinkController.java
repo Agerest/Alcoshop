@@ -23,7 +23,7 @@ public class DrinkController {
 
     @RequestMapping(value="/getdrinks", method= RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE){
         public ResponseEntity<List<Drink>> getDrinks(){
-            List<Drink> drinks = drinkRepository.getAll();
+            List<Drink> drinks = drinkRepository.findAll();
             if (drinks.isEmpty()){
                 return new ResponseEntity<List<Drink>>(HttpStatus.NOT_FOUND);
             }

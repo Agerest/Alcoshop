@@ -31,16 +31,16 @@ public class DrinkController {
         }
     }
 
-    @RequestMapping(value = "/getdrinks", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public ResponseEntity<List<Drink>> getDrinks() {
-        List<Drink> drinks = drinkRepository.findAll();
-        if (drinks.isEmpty()) {
-            log.info(drinks.toString());
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
-        log.info(drinks.toString());
-        return new ResponseEntity<>(drinks,HttpStatus.OK);
-    }
+    // @RequestMapping(value = "/getdrinks", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    // public ResponseEntity<List<Drink>> getDrinks() {
+    //     List<Drink> drinks = drinkRepository.findAll();
+    //     if (drinks.isEmpty()) {
+    //         log.info(drinks.toString());
+    //         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    //     }
+    //     log.info(drinks.toString());
+    //     return new ResponseEntity<>(drinks,HttpStatus.OK);
+    // }
 
     @RequestMapping(value = "/getdrinks{id}", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<List<Drink>> getDrinks(@PathVariable Integer id) {

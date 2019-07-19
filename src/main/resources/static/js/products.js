@@ -19,8 +19,9 @@ function createDrink(drink) {
 let drinks = getDrinks();
 let htmlDrinks;
 
+console.log("test 2");
+
 for (let i = 0; i < drinks.length; i++){
-    htmlDrinks += createDrink(drinks[i]) + " ";
+    ReactDOM.render(createDrink(drinks[i]), document.getElementById("root-main"));
 }
 
-ReactDOM.render(htmlDrinks, document.getElementById("root-main"));

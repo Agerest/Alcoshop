@@ -16,10 +16,10 @@ function createDrink(drink) {
 }
 
 let drinks = getDrinks();
-console.log(drinks[0].name);
 let htmlDrinks;
 
 drinks.forEach(element => {
+    console.log(element);
     htmlDrinks += createDrink(element) + " ";
 });
 

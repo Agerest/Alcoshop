@@ -1,7 +1,12 @@
 package alco.shop.model;
 
+import lombok.Data;
+import lombok.ToString;
+
 import javax.persistence.*;
 
+@ToString
+@Data
 @Entity
 @Table(name = "drink")
 public class Drink {

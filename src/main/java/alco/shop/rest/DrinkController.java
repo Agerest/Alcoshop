@@ -21,26 +21,26 @@ public class DrinkController {
     @Autowired
     private DrinkRepository drinkRepository;
 
-    @RequestMapping(value="/getdrinks", method= RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE){
-        public ResponseEntity<List<Drink>> getDrinks(){
-            List<Drink> drinks = drinkRepository.findAll();
-            if (drinks.isEmpty()){
-                return new ResponseEntity<List<Drink>>(HttpStatus.NOT_FOUND);
-            }
-            return new ResponseEntity<List<Drink>>(drinks, HttpStatus.OK);
-        }
-    }
-
-    // @RequestMapping(value = "/getdrinks", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    // public ResponseEntity<List<Drink>> getDrinks() {
-    //     List<Drink> drinks = drinkRepository.findAll();
-    //     if (drinks.isEmpty()) {
-    //         log.info(drinks.toString());
-    //         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    // @RequestMapping(value="/getdrinks", method= RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE){
+    //     public ResponseEntity<List<Drink>> getDrinks(){
+    //         List<Drink> drinks = drinkRepository.findAll();
+    //         if (drinks.isEmpty()){
+    //             return new ResponseEntity<List<Drink>>(HttpStatus.NOT_FOUND);
+    //         }
+    //         return new ResponseEntity<List<Drink>>(drinks, HttpStatus.OK);
     //     }
-    //     log.info(drinks.toString());
-    //     return new ResponseEntity<>(drinks,HttpStatus.OK);
     // }
+
+    @RequestMapping(value = "/getdrinks", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public ResponseEntity<List<Drink>> getDrinks() {
+        List<Drink> drinks = drinkRepository.findAll();
+        if (drinks.isEmpty()) {
+            log.info(drinks.toString());
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        log.info(drinks.toString());
+        return new ResponseEntity<>(drinks,HttpStatus.OK);
+    }
 
     @RequestMapping(value = "/getdrinks{id}", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<List<Drink>> getDrinks(@PathVariable Integer id) {

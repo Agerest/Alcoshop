@@ -7,5 +7,5 @@ function getJson() {
     xhr.send();
     console.log("Test 4");
     let drinks = JSON.parse(xhr.responseText)
-    console.log(drinks[0]);
+    console.log(drinks[0].name);
 }

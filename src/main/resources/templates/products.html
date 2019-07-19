@@ -20,16 +20,22 @@
     <link rel="stylesheet" href="/css/products.css">
     <link rel="stylesheet" href="/css/footer.css">
     <!-- /Prod -->
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 </head>
 
 <body>
     <header class="container">
         <div class="nav row justify-content-between">
-                <button class="shop-name col align-self-center">
-                        <a href="https://alcoshop-new.herokuapp.com/">
-                            <h3>Алкошоп</h3>
-                        </a>
-                    </button>
+            <button class="shop-name col align-self-center">
+                <a href="https://alcoshop-new.herokuapp.com/">
+                    <h3>Алкошоп</h3>
+                </a>
+            </button>
             <ul class="nav-list col">
                 <li class="d-inline-block"><a class="nav-list-item" href="">О нас</a></li>
                 <li class="d-inline-block m-2">|</li>
@@ -45,30 +51,31 @@
         </div>
 
         <ul class="row p-2" id="dropdown">
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Коньяк (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Вино (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Пиво (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Виски (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Вино игристое (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Водка (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Ликеры (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Текила (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Кашаса (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Граппа (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Хересы (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Настойка (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Ром (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Портвейн</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Джины (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Мадера (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Арманьяк (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Вермут (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Кальвадосы (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Вино плодовое (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Абсент (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Шнапс (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Бренди (виноградные) (100)</a></li>
-                <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Бренди и листеляты фруктовые (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Коньяк (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Вино (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Пиво (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Виски (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Вино игристое (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Водка (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Ликеры (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Текила (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Кашаса (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Граппа (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Хересы (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Настойка (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Ром (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Портвейн</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Джины (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Мадера (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Арманьяк (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Вермут (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Кальвадосы (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Вино плодовое (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Абсент (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Шнапс (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Бренди (виноградные) (100)</a></li>
+            <li class="col-3"><a href="https://alcoshop-new.herokuapp.com/products">Бренди и листеляты фруктовые
+                    (100)</a></li>
         </ul>
     </header>
 
@@ -101,7 +108,7 @@
         </div>
     </nav>
 
-    <main class="container">
+    <main class="container" id="root-main">
         <!--<section class="products row justify-content-between">
     <article class="product col m-3">
         <a href="" class="product-name"><h3>Лучшее пиво</h3></a>
@@ -207,13 +214,15 @@
 
     <!-- Debugging -->
     <script src="../static/js/header.js"></script>
-    <script src="../static/js/products.js"></script>
+    <script type="text/babel" src="../static/js/products.js"></script>
     <!-- /Debugging -->
 
     <!-- Prod-->
     <script src="/js/header.js"></script>
-    <script src="/js/products.js"></script>
+    <script type="text/babel" src="/js/products.js"></script>
     <!-- /Prod -->
+
+    
 </body>
 
 </html>

@@ -2,10 +2,7 @@ function getDrinks() {
     let xhr = new XMLHttpRequest();
     xhr.open("GET", "/getdrinks", false);
     xhr.send();
-    console.log(xhr.responseText);
-    let test = JSON.parse(xhr.responseText)
-    console.log(test[0].name);
-    return test;
+    return JSON.parse(xhr.responseText)
 }
 
 function createDrink(drink) {
@@ -19,6 +16,7 @@ function createDrink(drink) {
 }
 
 let drinks = getDrinks();
+console.log(drinks[0].name);
 let htmlDrinks;
 
 drinks.array.forEach(element => {

@@ -5,7 +5,7 @@ function getJson() {
     xhr.open("POST", "/getdrinks", true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send();
-    
+    console.log("Test 1");
     if (xhr.status == 200) {
         console.log("JSON " + xhr.responseText);
     } else {

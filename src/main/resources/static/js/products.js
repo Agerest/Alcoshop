@@ -11,7 +11,7 @@ function getDrinks() {
 }
 
 function createDrink(drink) {
-    return (<select class="product col-4">
+    return (<article class="product col-4">
         <a href="" class="product-name">
             <h3>{drink.name}</h3>
         </a>
@@ -19,7 +19,7 @@ function createDrink(drink) {
         <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
         <p>{drink.description}</p>
         <p>Крепость: 4.7%</p>
-    </select>)
+    </article>)
 }
 
 function showNavDropdown(id) {

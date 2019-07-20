@@ -31,6 +31,7 @@
 </head>
 
 <body>
+    <!-- Заголовок -->
     <header class="container-fluid">
         <div class="nav row justify-content-between">
             <button class="shop-name col align-self-center">
@@ -81,17 +82,20 @@
         </ul>
     </header>
 
-    <div class="container-fluid">
+    <!-- Основной контент -->
+    <div class="container-fluid mt-2">
         <div class="row justify-content-center">
 
-            <div class="col-2 p-2">
-                <nav class="container p-2 mt-2" id="filters">
+            <!-- Боковой фильтр -->
+            <div class="col-2">
+                <nav class="container" id="filters">
                     <div class="row">
                         <div class="col">
-                            <button class="btn filter-btn btn-dark w-100" id="dropdown-btn-0" onclick="showNavDropdown(0)">Нажми на меня</button>
+                            <button class="btn filter-btn btn-dark w-100" id="dropdown-btn-0"
+                                onclick="showNavDropdown(0)">Нажми на меня</button>
                         </div>
                     </div>
-                    <div class="row filter-dropdown" id="dropdown-0">
+                    <div class="filter-dropdown row" id="side-dropdown-item-0">
                         <div class="col-3">
                             <p>Test</p>
                         </div>
@@ -114,40 +118,13 @@
                             <p>Test</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="dropdown-btn row">
                         <div class="col">
-                            <button class="btn filter-btn btn-dark w-100"  id="dropdown-btn-1"  onclick="showNavDropdown(1)">Нажми на меня</button>
+                            <button class="btn filter-btn btn-dark w-100" id="dropdown-btn-1"
+                                onclick="showNavDropdown(1)">Нажми на меня</button>
                         </div>
                     </div>
-                    <div class="row filter-dropdown" id="dropdown-1">
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <button class="btn filter-btn btn-dark w-100" id="dropdown-btn-2" onclick="showNavDropdown(2)">Нажми на меня</button>
-                        </div>
-                    </div>
-                    <div class="row filter-dropdown" id="dropdown-2">
+                    <div class="filter-dropdown row" id="side-dropdown-item-1">
                         <div class="col-3">
                             <p>Test</p>
                         </div>
@@ -172,10 +149,11 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <button class="btn filter-btn btn-dark w-100" id="dropdown-btn-3" onclick="showNavDropdown(3)">Нажми на меня</button>
+                            <button class="btn filter-btn btn-dark w-100" id="dropdown-btn-2"
+                                onclick="showNavDropdown(2)">Нажми на меня</button>
                         </div>
                     </div>
-                    <div class="row filter-dropdown" id="dropdown-3">
+                    <div class="filter-dropdown row" id="side-dropdown-item-2">
                         <div class="col-3">
                             <p>Test</p>
                         </div>
@@ -200,10 +178,40 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <button class="btn filter-btn btn-dark w-100"  id="dropdown-btn-4" onclick="showNavDropdown(4)">Нажми на меня</button>
+                            <button class="btn filter-btn btn-dark w-100" id="dropdown-btn-3"
+                                onclick="showNavDropdown(3)">Нажми на меня</button>
                         </div>
                     </div>
-                    <div class="row filter-dropdown" id="dropdown-4">
+                    <div class="filter-dropdown row" id="side-dropdown-item-3">
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn filter-btn btn-dark w-100" id="dropdown-btn-4"
+                                onclick="showNavDropdown(4)">Нажми на меня</button>
+                        </div>
+                    </div>
+                    <div class="filter-dropdown row" id="side-dropdown-item-4">
                         <div class="col-3">
                             <p>Test</p>
                         </div>
@@ -232,39 +240,28 @@
                         </div>
                     </div>
                 </nav>
-
             </div>
 
-            <div class="col-6 p-2">
-                <nav class="container mt-2">
-                    <div class="row p-2 justify-content-around">
-                        <div class="col-3">
-                            <input class="form-control w-100" placeholder="Мин цена">
-                        </div>
-                        <div class="col-3">
-                            <input class="form-control w-100" placeholder="Макс цена">
-                        </div>
-                        <div class="col-3">
-                            <select class="form-control">
-                                <option>Регион</option>
-                                <option>Москва</option>
-                                <option>Санкт Петербург</option>
-                                <option>Самара</option>
-                            </select>
-                        </div>
-                        <div class="col-3">
-                            <select class="form-control">
-                                <option label="default">Сортировать</option>
-                                <option label="ascending">По возрастанию</option>
-                                <option label="descending">По убыванию</option>
-                            </select>
+            <!-- Продукты и сортировка -->
+            <div class="col-7">
+                <main class="container">
+                    <!-- Верхняя сортировка и группировка -->
+                    <div class="row">
+                        <div class="col d-flex justify-content-start" id="sort-container">
+                            <div class="sort-item p-3">
+                                <span>Сортировать по цене:</span>
+                                <span><a>по убыванию</a></span>
+                            </div>
+                            <div class="sort-item p-3">
+                                <span>Сортировать по крепости:</span>
+                                <span><a>по убыванию</a></span>
+                            </div>
                         </div>
                     </div>
-                </nav>
 
-                <main class="container mt-2">
-                    <div class="row" id="root-main">
-                        <article class="product col-4">
+                    <!-- Продукты -->
+                    <div class="row" id="product-container">
+                        <select class="product col-4">
                             <a href="" class="product-name">
                                 <h3>Лучшее пиво</h3>
                             </a>
@@ -272,8 +269,8 @@
                             <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
                             <p>Очень полезное пиво, рекомендую пить всем</p>
                             <p>Крепость: 4.7%</p>
-                        </article>
-                        <article class="product col-4">
+                        </select>
+                        <select class="product col-4">
                             <a href="" class="product-name">
                                 <h3>Лучшее пиво</h3>
                             </a>
@@ -281,8 +278,8 @@
                             <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
                             <p>Очень полезное пиво, рекомендую пить всем</p>
                             <p>Крепость: 4.7%</p>
-                        </article>
-                        <article class="product col-4">
+                        </select>
+                        <select class="product col-4">
                             <a href="" class="product-name">
                                 <h3>Лучшее пиво</h3>
                             </a>
@@ -290,8 +287,8 @@
                             <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
                             <p>Очень полезное пиво, рекомендую пить всем</p>
                             <p>Крепость: 4.7%</p>
-                        </article>
-                        <article class="product col-4">
+                        </select>
+                        <select class="product col-4">
                             <a href="" class="product-name">
                                 <h3>Лучшее пиво</h3>
                             </a>
@@ -299,8 +296,8 @@
                             <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
                             <p>Очень полезное пиво, рекомендую пить всем</p>
                             <p>Крепость: 4.7%</p>
-                        </article>
-                        <article class="product col-4">
+                        </select>
+                        <select class="product col-4">
                             <a href="" class="product-name">
                                 <h3>Лучшее пиво</h3>
                             </a>
@@ -308,8 +305,8 @@
                             <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
                             <p>Очень полезное пиво, рекомендую пить всем</p>
                             <p>Крепость: 4.7%</p>
-                        </article>
-                        <article class="product col-4">
+                        </select>
+                        <select class="product col-4">
                             <a href="" class="product-name">
                                 <h3>Лучшее пиво</h3>
                             </a>
@@ -317,8 +314,8 @@
                             <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
                             <p>Очень полезное пиво, рекомендую пить всем</p>
                             <p>Крепость: 4.7%</p>
-                        </article>
-                        <article class="product col-4">
+                        </select>
+                        <select class="product col-4">
                             <a href="" class="product-name">
                                 <h3>Лучшее пиво</h3>
                             </a>
@@ -326,8 +323,8 @@
                             <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
                             <p>Очень полезное пиво, рекомендую пить всем</p>
                             <p>Крепость: 4.7%</p>
-                        </article>
-                        <article class="product col-4">
+                        </select>
+                        <select class="product col-4">
                             <a href="" class="product-name">
                                 <h3>Лучшее пиво</h3>
                             </a>
@@ -335,13 +332,14 @@
                             <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
                             <p>Очень полезное пиво, рекомендую пить всем</p>
                             <p>Крепость: 4.7%</p>
-                        </article>
+                        </select>
                     </div>
                 </main>
             </div>
         </div>
     </div>
 
+    <!-- Подвал -->
     <footer class="container">
         <div class="row justify-content-center">
             <div class="col">

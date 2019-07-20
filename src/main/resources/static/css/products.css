@@ -1,5 +1,13 @@
+/* Top filters */
+#sort-container {
+    background-color: #E2E0E0;
+    font-size: 14px;
+    border: 1px solid black;
+}
+
+
 /*filters*/
-nav {
+#filters {
     background-color: #E2E0E0;
     border: 1px solid black;
 }
@@ -32,3 +40,4 @@ nav {
     text-align: center;
     height: 200px;
 }
+

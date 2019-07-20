@@ -34,9 +34,9 @@
 
 #dropdown {
     display: none;
+    /* visibility: hidden; */
     background-color: #E2E0E0;
     margin-top: 5px;
-    /* border-radius: 3px; */
 }
 
 #dropdown li {

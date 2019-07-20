@@ -1,7 +1,7 @@
 let drinks = getDrinks();
 let htmlDrinks = drinks.map((drink) => createDrink(drink));
 
-ReactDOM.render(htmlDrinks, document.getElementById("root-main"));
+ReactDOM.render(htmlDrinks, document.getElementById("products-container"));
 
 function getDrinks() {
     let xhr = new XMLHttpRequest();
@@ -11,7 +11,7 @@ function getDrinks() {
 }
 
 function createDrink(drink) {
-    return (<article class="product col-4">
+    return (<select class="product col-4">
         <a href="" class="product-name">
             <h3>{drink.name}</h3>
         </a>
@@ -19,11 +19,11 @@ function createDrink(drink) {
         <h4>&#9733; &#9733; &#9733; &#9733; &#9734;</h4>
         <p>{drink.description}</p>
         <p>Крепость: 4.7%</p>
-    </article>)
+    </select>)
 }
 
 function showNavDropdown(id) {
-    let element = document.getElementById("dropdown-" + id);
+    let element = document.getElementById("side-dropdown-item-" + id);
     if (element.style.display === "flex") {
         element.style.display = "none";
     } else {

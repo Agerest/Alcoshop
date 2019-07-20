@@ -1,7 +1,7 @@
 let drinks = getDrinks();
 let htmlDrinks = drinks.map((drink) => createDrink(drink));
 
-ReactDOM.render(htmlDrinks, document.getElementById("products-container"));
+ReactDOM.render(htmlDrinks, document.getElementById("product-container"));
 
 function getDrinks() {
     let xhr = new XMLHttpRequest();

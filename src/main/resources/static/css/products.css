@@ -1,11 +1,10 @@
 /*filters*/
-
-.btn-search {
+nav {
     background-color: #E2E0E0;
+    border: 1px solid black;
 }
 
 /*products*/
-
 .product {
     text-align: center;
     background-color: #E2E0E0;

@@ -5,10 +5,14 @@
     margin: 0;
 }
 
+.shop-name a {
+    color: black;
+}
+
 .nav,
 #dropdown {
     background-color: #E2E0E0;
-    border-radius: 0 0 3px 3px;
+    /* border-radius: 0 0 3px 3px; */
 }
 
 .nav-list-item {
@@ -33,7 +37,7 @@
     display: none;
     background-color: #E2E0E0;
     margin-top: 5px;
-    border-radius: 3px;
+    /* border-radius: 3px; */
 }
 
 #dropdown li {

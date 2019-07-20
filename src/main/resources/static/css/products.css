@@ -4,6 +4,14 @@ nav {
     border: 1px solid black;
 }
 
+.filter-btn {
+    margin: 5px 0 5px 0;
+}
+
+.filter-dropdown {
+    display: none;
+}
+
 /*products*/
 .product {
     text-align: center;

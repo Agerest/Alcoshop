@@ -1,3 +1,8 @@
+let drinks = getDrinks();
+let htmlDrinks = drinks.map((drink) => createDrink(drink));
+
+ReactDOM.render(htmlDrinks, document.getElementById("root-main"));
+
 function getDrinks() {
     let xhr = new XMLHttpRequest();
     xhr.open("GET", "/getdrinks", false);
@@ -17,8 +22,12 @@ function createDrink(drink) {
     </article>)
 }
 
-let drinks = getDrinks();
-let htmlDrinks = drinks.map((drink) => createDrink(drink));
-
-ReactDOM.render(htmlDrinks, document.getElementById("root-main"));
+function showNavDropdown(id) {
+    let element = document.getElementById("dropdown-" + id);
+    if (element.style.display === "flex") {
+        element.style.display = "none";
+    } else {
+        element.style.display = "flex";
+    }
+}
 

@@ -10,6 +10,7 @@
     <!-- Debugging  -->
     <link rel="stylesheet" href="../static/css/body.css">
     <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/nav.css">
     <link rel="stylesheet" href="../static/css/products.css">
     <link rel="stylesheet" href="../static/css/footer.css">
     <!-- /Debugging -->
@@ -17,6 +18,7 @@
     <!-- Prod -->
     <link rel="stylesheet" href="/css/body.css">
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/products.css">
     <link rel="stylesheet" href="/css/footer.css">
     <!-- /Prod -->
@@ -81,42 +83,15 @@
 
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-3 p-2">
-                <nav class="container p-2 mt-2">
+
+            <div class="col-2 p-2">
+                <nav class="container p-2 mt-2" id="filters">
                     <div class="row">
                         <div class="col">
-                            <button class="btn btn-dark w-100">Нажми на меня</button>
+                            <button class="btn filter-btn btn-dark w-100" id="dropdown-btn-0" onclick="showNavDropdown(0)">Нажми на меня</button>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <button class="btn btn-dark w-100">Нажми на меня</button>
-                        </div>
-                    </div>
-                    <div class="row">
+                    <div class="row filter-dropdown" id="dropdown-0">
                         <div class="col-3">
                             <p>Test</p>
                         </div>
@@ -141,38 +116,10 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <button class="btn btn-dark w-100">Нажми на меня</button>
+                            <button class="btn filter-btn btn-dark w-100"  id="dropdown-btn-1"  onclick="showNavDropdown(1)">Нажми на меня</button>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Test</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <button class="btn btn-dark w-100">Нажми на меня</button>
-                        </div>
-                    </div>
-                    <div class="row">
+                    <div class="row filter-dropdown" id="dropdown-1">
                         <div class="col-3">
                             <p>Test</p>
                         </div>
@@ -197,10 +144,10 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <button class="btn btn-dark w-100">Нажми на меня</button>
+                            <button class="btn filter-btn btn-dark w-100" id="dropdown-btn-2" onclick="showNavDropdown(2)">Нажми на меня</button>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row filter-dropdown" id="dropdown-2">
                         <div class="col-3">
                             <p>Test</p>
                         </div>
@@ -225,14 +172,70 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <input type="submit" class="btn btn-warning w-100" value="Найти">
+                            <button class="btn filter-btn btn-dark w-100" id="dropdown-btn-3" onclick="showNavDropdown(3)">Нажми на меня</button>
+                        </div>
+                    </div>
+                    <div class="row filter-dropdown" id="dropdown-3">
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn filter-btn btn-dark w-100"  id="dropdown-btn-4" onclick="showNavDropdown(4)">Нажми на меня</button>
+                        </div>
+                    </div>
+                    <div class="row filter-dropdown" id="dropdown-4">
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Test</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="submit" class="btn filter-btn btn-warning w-100" value="Найти">
                         </div>
                     </div>
                 </nav>
 
             </div>
 
-            <div class="col-8 p-2">
+            <div class="col-6 p-2">
                 <nav class="container mt-2">
                     <div class="row p-2 justify-content-around">
                         <div class="col-3">

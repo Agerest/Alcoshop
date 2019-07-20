@@ -1,8 +1,9 @@
 showDropdown = function () {
-    if (document.getElementById("dropdown").style.display === "flex") {
-        document.getElementById("dropdown").style.display = "none";
+    let element = document.getElementById("dropdown");
+    if (element.style.display === "flex") {
+        element.style.display = "none";
     } else {
-        document.getElementById("dropdown").style.display = "flex";
+        element.style.display = "flex";
     }
 };
 

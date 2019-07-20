@@ -6,7 +6,7 @@ function getDrinks() {
 }
 
 function createDrink(drink) {
-    return (<article class="product col-3">
+    return (<article class="product col-4">
         <a href="" class="product-name">
             <h3>{drink.name}</h3>
         </a>

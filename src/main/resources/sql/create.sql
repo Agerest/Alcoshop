@@ -1,7 +1,8 @@
 create table drink
 (
-    type varchar(30) not null primary key,
+    id serial not null primary key,
     name varchar(30) not null,
-    type int not null,
+    type varchar(30) not null,
+    price int not null,
     description varchar(80)
 );

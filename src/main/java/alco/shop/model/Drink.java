@@ -14,6 +14,7 @@ public class Drink {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private Integer type;
+    private String type;
+    private Integer price;
     private String description;
 }

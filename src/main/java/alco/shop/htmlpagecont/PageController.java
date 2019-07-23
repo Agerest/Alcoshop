@@ -2,6 +2,7 @@ package alco.shop.htmlpagecont;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -15,6 +16,11 @@ public class PageController {
 
     @RequestMapping(value = "/products", method = RequestMethod.GET)
     public String products(Model model) {
+        return "products";
+    }
+
+    @RequestMapping(value = "/products/{id}", method = RequestMethod.GET)
+    public String productsType(@PathVariable Integer id, Model model) {
         return "products";
     }
 

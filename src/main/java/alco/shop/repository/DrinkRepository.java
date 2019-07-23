@@ -9,6 +9,6 @@ import java.util.List;
 
 public interface DrinkRepository extends JpaRepository<Drink, Long> {
 
-    Page<Drink> getAllByType(Integer type, Pageable pageable);
+    Page<Drink> getAllByType(String type, Pageable pageable);
 
 }
